@@ -89,6 +89,10 @@ Component
 		font-size: clamp(1.4rem, 1.157rem + 0.647vw, 2.4rem);
 		line-height: 1.5;
 	}
+	&__02{
+		@include font-size(16);
+		line-height: 1.5;
+	}
 }
 
 
@@ -191,6 +195,75 @@ Component
 				white-space: nowrap;
 				top: 44%;
 			}
+		}
+	}
+
+	&__06{
+		margin-bottom: 34px;
+		& > *{
+			display: block;
+		}
+		.c-ft{
+			&--en{
+				@include font-size(48);
+				font-weight: 700;
+				color: #4169E1;
+				font-family: $font-Roboto;
+				margin-bottom: 24px;
+				line-height: 1.2;
+				span{
+					display: block;
+					font-size: 50%;
+					font-weight: 400;
+					margin-bottom: 24px;
+				}
+			}
+			&--jp{
+				@include font-size(48);
+				line-height: 1.45;
+				font-weight: 700;
+			}
+		}
+	}
+	&__07{
+		margin-bottom: 76px;
+		text-align: center;
+		& > *{
+			display: block;
+		}
+		.c-ft{
+			&--en{
+				@include font-size(24);
+				font-weight: 700;
+				font-family: $font-Roboto;
+				margin-bottom: 30px;
+			}
+			&--jp{
+				@include font-size(32);
+				line-height: 1.55;
+				font-weight: 700;
+				display: inline-block;
+				text-align: left;
+			}
+		}
+	}
+	&__08{
+		@include font-size(24);
+		font-weight: 700;
+		line-height: 1.5;
+		margin-bottom: 15px;
+		.txt-sm{
+			margin-bottom: 15px;
+			display: block;
+		}
+		.txt-lg{
+			display: block;
+		}
+		span{
+			font-size: 75%;
+			display: block;
+			color: #4169E1;
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -410,6 +483,46 @@ Component
 			border-radius: 50%;
 			top: calc(50% - 5px);
 			right: 19px;
+		}
+	}
+
+	&__solid{
+		border: 3px solid #fff;
+		max-width: 260px;
+		width: 100%;
+		height: 58px;
+		@include flex(0,center);
+		position: relative;
+		@include font-size(14);
+		font-weight: 700;
+		border-radius: 50px;
+		color: #fff;
+		padding-left: 30px;
+		background: rgb(65, 105, 225);
+		background: linear-gradient(140deg, #3755F3 0%, #137FD9 100%);
+		@include p-after(24px, 24px){
+			background: url(../img/arrow-right.png) no-repeat center/100%;
+			top: calc(50% - 12px);
+			right: 30px;
+		}
+		&--02{
+			justify-content: center;
+			padding: 0;
+			&:after{
+				display: none;
+			}
+			span{
+				display: inline-flex;
+				align-items: center;
+				gap: 0 15px;
+				position: relative;
+				@include p-after(24px, 24px){
+					background: url(../img/arrow-right.png) no-repeat center/100%;
+					top: calc(50% - 12px);
+					right: 0;
+					position: relative;
+				}
+			}
 		}
 	}
 }
