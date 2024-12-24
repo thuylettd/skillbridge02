@@ -6473,6 +6473,7 @@ select:required:invalid {
 }
 .service-faq__complete-intro {
   margin-bottom: 48px;
+  color: #474747;
 }
 .service-faq__complete-list {
   display: grid;
