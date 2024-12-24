@@ -1,0 +1,33 @@
+<main id="page-<%= pageData.template %>">
+	<section class="sec-pickup">
+		<div class="inner">
+			<div class="heading-box">
+				<div class="heading-box--left">
+					<div class="heading-box__input">
+						<input type="text" class="form-control" placeholder="企業名で検索">
+						<button type="button" class="heading-box__input-sub">
+							<img src="<%= RELATIVE_PATH %>img/search.png" alt="search">
+						</button>
+					</div>
+					<a href="">検索条件をリセット</a>
+				</div>
+				<div class="heading-box--right">
+					<div class="heading-box__note">
+						<a href="" class="c-btn__02">
+							<img src="<%= RELATIVE_PATH %>img/search-status.png" alt="search-status">
+							<span>詳細検索</span>
+						</a>
+						<a href="" class="c-btn__02">
+							<img src="<%= RELATIVE_PATH %>img/magic-wand-01.png" alt="AI Search">
+							<span>AI Search</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="company-failed">
+				<img src="<%= RELATIVE_PATH %>img/piopup.png" alt="search-status">
+				<span>検索結果はありません。</span>
+			</div>
+		</div>
+	</section>
+</main>

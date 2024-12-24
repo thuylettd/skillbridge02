@@ -1,0 +1,221 @@
+@use "vars" as *;
+
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background: white;
+	@include mq(tb){
+		padding: 15px 0;
+	}
+	.inner{
+		position: relative;
+	}
+	.header-logo{
+		display: block;
+		width: 210px;
+		z-index: 999;
+		@include mq(tb-min){
+			position: absolute;
+			left: 15px;
+			@include v-align;
+		}
+		@include mq(tb){
+			position: relative;
+			width: 166px;
+		}
+	}
+	.header-account{
+		@include mq(tb-min){
+			position: absolute;
+			@include v-align;
+			right: 15px;
+		}
+		@include mq(tb){
+			text-align: center;
+		}
+		&__item{
+			width: 36px;
+			cursor: pointer;
+			@include mq(tb){
+				width: auto;
+				display: inline-block;
+				color: #ED2649;
+				position: relative;
+				padding: 0 0 0 30px;
+				@include font-size(16);
+				&:before{
+					content: "";
+					width: 24px;
+					height: 24px;
+					background: url("../img/logout.png")no-repeat;
+					background-size: 100%;
+					position: absolute;
+					@include v-align;
+					left: 0;
+				}
+			}
+		}
+		&__login{
+			display: block;
+			text-align: center;
+			min-width: 120px;
+			background: -o-linear-gradient(left, #3755f3 0%, #137fd9 100%);
+			background: linear-gradient(90deg, #3755f3 0%, #137fd9 100%);
+			color: white;
+			font-size: 1.6rem;
+			font-weight: bold;
+			padding: 5px;
+			border-radius: 30px;
+			@include mq(){
+				width: auto;
+				max-width: 120px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.header-nav{
+		@include mq(tb-min){
+			@include flex(center,center,wrap);
+			padding: 0 170px 0 300px;
+		}
+		@include mq(lp){
+			padding: 0 80px 0 180px;
+		}
+		@include mq(tb){
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			padding: 60px 20px;
+			overflow-y: scroll;
+			background: white;
+			&.active{
+				display: block;
+			}
+		}
+		&__menu{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			@include mq(tb){
+				display: block;
+				margin-bottom: 30px;
+			}
+			&-item{
+				position: relative;
+				@include mq(tb){
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				a{
+					display: block;
+					@include font-size(16);
+					font-weight: bold;
+					color: #0F1A2A;
+					padding: 33px 15px;
+					position: relative;
+					@include mq(lp){
+						padding: 33px 10px;
+					}
+					@include mq(){
+						display: inline-block;
+						text-align: center;
+						padding: 10px 0;
+					}
+					&:hover,&.active{
+						color: $blue;
+						opacity: 1;
+						@include mq(tb){
+							&:after{
+								content: "";
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								height: 3px;
+								border-radius: 4px;
+								background: $blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.js-mobile {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 20px;
+		@include v-align;
+		cursor: pointer;
+		z-index: 12;
+		display: none;
+		@include mq(tb){
+			@include flex(center,center);
+		}
+		span{
+			display: block;
+			width: 18px;
+			height: 2px;
+			background-color: transparent;
+			border-radius: 3px;
+			position: relative;
+			&:before,&:after{
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #141414;
+				content: '';
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
+				border-radius: 3px;
+			}
+			&:before{
+				-webkit-transform: translateY(-250%);
+				transform: translateY(-250%);
+				top: 1px;
+			}
+			&:after{
+				-webkit-transform: translateY(250%);
+				transform: translateY(250%);
+				bottom: 1px;
+			}
+		}
+		&--close {
+			span{
+				background-color: transparent;
+				&:before,&:after{
+					width: 100%;
+					background: #141414;
+				}
+				&:before {
+					-webkit-transform: translateY(0) rotate(45deg);
+					transform: translateY(0) rotate(45deg);
+					top: 2px;
+				}
+				&:after {
+					-webkit-transform: translateY(0) rotate(-45deg);
+					transform: translateY(0) rotate(-45deg);
+					bottom: -2px;
+				}
+			}
+		}
+	}
+}
+
+
+.js-locked {
+	overflow: hidden;
+	-ms-touch-action: none;
+	touch-action: none;
+	body {
+		-webkit-overflow-scrolling: auto;
+	}
+}

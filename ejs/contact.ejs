@@ -1,0 +1,56 @@
+<main id="page-contact">
+    <section class="page-contact">
+        <div class="inner">
+            <h1 class="c-ttl__05">
+                <span class="txt-lg">CONTACT</span>
+                <span class="txt-sm">/　　Contact Us　　/</span>
+            </h1>
+            <ul class="contact-main">
+                <li class="contact-main__item">
+                    <h2 class="contact-main__ttl">お問い合わせ</h2>
+                    <p>SkillBridgeに関する質問など</p>
+                    <a href="#" class="contact-main__btn js-show-modal" data-modal="modal-01">問い合わせる</a>
+                </li>
+                <li class="contact-main__item">
+                    <h2 class="contact-main__ttl">運営情報</h2>
+                    <p>Skill Bridge運営会社、株式会社LandBridgeの情報を閲覧されたい<br class="pc">方はホームページをご覧ください。</p>
+                    <a href="#" class="contact-main__btn contact-main__btn--02">ホームページへ</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<div class="c-modal c-modal--contact is-show" id="modal-01">
+    <div class="c-modal__wp">
+        <form action="" method="post" class="c-modal__form" enctype="multipart/form-data">
+            <div class="c-modal__heading">
+                <h3 class="c-modal__ttl">お問い合わせ</h3>
+                <span class="c-modal__close js-cancel"><img src="<%= RELATIVE_PATH %>img/x-close-lg.png" alt="" width="24"></span>
+            </div>
+            <div class="c-modal__content c-al--c">
+                <div class="inquiry-form">
+                    <div class="inquiry-form__input">
+                        <span class="inquiry-form__label"><span class="required">*</span>お問い合わせ内容</span>
+                        <textarea name="" id="" class="form-control form-control--textarea error" placeholder="ご用件を入力してください"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="c-modal__control">
+                <button class="c-btn__04 js-show-modal" data-modal="modal-02">送信</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="c-modal c-modal--confirm" id="modal-02">
+    <div class="c-modal__wp">
+        <div class="c-modal__confirm">
+            <span class="ico-check"><img src="<%= RELATIVE_PATH %>img/check02.png" alt="" width="48"></span>
+            <h3 class="c-modal__ttl">問い合わせが完了しました</h3>
+            <p class="txt-confirm">お問い合わせいただきありがとうございます。<br>担当者よりご連絡させていただきます。</p>
+        </div>
+        <div class="c-modal__control">
+            <button class="c-btn__04 js-cancel">送信</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<header id="header">
+	<div class="inner">
+		<a href="<%= RELATIVE_PATH %>" class="header-logo">
+			<img src="<%= RELATIVE_PATH %>img/logo.png" alt="SKILL BRIDGE">
+		</a>
+		<nav class="header-nav">
+			<ul class="header-nav__menu">
+				<li class="header-nav__menu-item">
+					<a href="" class="active">トップ</a>
+				</li>
+				<li class="header-nav__menu-item">
+					<a href="">企業一覧</a>
+				</li>
+				<li class="header-nav__menu-item">
+					<a href="">エンジニア一覧</a>
+				</li>
+				<li class="header-nav__menu-item">
+					<a href="">コラム一覧</a>
+				</li>
+				<li class="header-nav__menu-item">
+					<a href="">サービス紹介</a>
+				</li>
+				<li class="header-nav__menu-item">
+					<a href="">お問い合わせ</a>
+				</li>
+				<li class="header-nav__menu-item sp-tb">
+					<a href="">ユーザー情報</a>
+				</li>
+				<li class="header-nav__menu-item sp-tb">
+					<a href="">パスワード変更</a>
+				</li>
+				<li class="header-nav__menu-item sp-tb">
+					<a href="">ブックマーク</a>
+				</li>
+				<li class="header-nav__menu-item sp-tb">
+					<a href="">お気に入り</a>
+				</li>
+			</ul>
+			<div class="header-account">
+
+				<% if(pageData.template == "list"){ %>
+
+					<div class="header-account__item">
+						<img src="<%= RELATIVE_PATH %>img/icon-avatar.png" alt="avatar" class="pc-tb">
+						<span class="sp-tb">ログアウト</span>
+					</div>
+				<% }
+				else { %>
+					<a href="" class="header-account__login js-loggin">
+						ログイン
+					</a>
+				<% } %>
+
+			</div>
+		</nav>
+
+		<span class="js-mobile">
+			<span></span>
+		</span>
+	</div>
+</header>

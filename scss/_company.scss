@@ -1,0 +1,164 @@
+@use "vars" as *;
+.heading-box{
+	@include flex(0,0,wrap);
+	margin-bottom: 20px;
+	&--left{
+		width: 50%;
+		@include flex(0,center,wrap);
+		@include mq(){
+			width: 215px;
+		}
+		a{
+			display: block;
+			color: $blue;
+			@include font-size(14);
+			&:hover{
+				text-decoration: underline;
+			}
+			@include mq(){
+				display: none;
+			}
+		}
+	}
+	&--right{
+		width: 50%;
+		@include mq(){
+			width: calc(100% - 215px);
+		}
+	}
+	&__input{
+		position: relative;
+		width: calc(100% - 145px);
+		margin: 0 15px 0 0;
+		@include mq(){
+			width: 100%;
+			margin: 0;
+		}
+		&-sub{
+			width: 50px;
+			height: 48px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include flex(center,center);
+			background: none;
+			border: none;
+			z-index: 2;
+			cursor: pointer;
+			img{
+				width: 20px;
+			}
+		}
+	}
+	&__note{
+		@include flex(end,center,wrap);
+		a{
+			margin-right: 20px;
+			@include mq(){
+				margin-right: 10px;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	&--column{
+		.heading-box--left{
+			@include mq(){
+				width: 100%;
+			}
+		}
+	}
+}
+
+.show-box{
+	@include flex(between,center,wrap);
+	margin-bottom: 50px;
+	&--left{
+		width: 50%;
+		@include font-size(16);
+		font-weight: 600;
+		@include mq(){
+			text-align: center;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	&--right{
+		@include mq(){
+			width: 100%;
+		}
+	}
+}
+
+.company-failed{
+	@include flex(center,center,wrap);
+	text-align: center;
+	@include font-size(20);
+	font-weight: bold;
+	color: black;
+	min-height: calc(100vh - 631px);
+	align-content: center;
+	@include mq(){
+		@include font-size(16);
+	}
+	span{
+		display: block;
+		width: 100%;
+	}
+	img{
+		display: block;
+		width: 190px;
+		margin: 0 auto 30px;
+		@include mq(){
+			width: 100px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+@include mq(){
+	#page-company,#page-company-current {
+		.sec-pickup {
+			padding: 20px 0;
+		}
+		.pickup-list{
+
+			&__item{
+				width: 100%;
+			}
+			&__box{
+				background: url(../img/bg-item-02.png) no-repeat;
+				background-size: cover;
+				background-position: top center;
+				padding: 9px 15px 45px;
+				&:after,.pickup-list__box--pin{
+					bottom: auto;
+					top: 13px;
+					right: 20px;
+				}
+			}
+			&__ttl{
+				width: 100%;
+				order: 1;
+				margin-bottom: 20px;
+			}
+			&__img{
+				width: 56px;
+				order: 2;
+			}
+			&__ct{
+				width: calc(100% - 56px);
+				order: 2;
+				padding: 0 7px 35px 7px;
+				dl{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+}
+
+

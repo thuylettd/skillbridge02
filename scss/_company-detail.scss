@@ -1,0 +1,300 @@
+@use "vars" as *;
+
+.sec-detail{
+	padding: 0 0 50px;
+}
+
+.detail-box{
+	background: white;
+	padding: 15px;
+	@include fts(16,25.6);
+	border-radius: 12px;
+	margin-bottom: 20px;
+	position: relative;
+	@include mq(){
+		margin: 0 -15px 10px;
+		border-radius: 0;
+		@include font-size(14);
+	}
+	&--btn{
+		@include flex(between,center,wrap);
+		margin-bottom: 15px;
+		.c-ttl__03{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.detail-heading{
+
+	@include flex(0,center,wrap);
+	&__img{
+		width: 120px;
+		@include mq(){
+			width: 80px;
+		}
+	}
+	&__ct{
+		width: calc(100% - 240px);
+		padding: 0 20px;
+		@include mq(){
+			width: calc(100% - 80px);
+			padding: 0 15px;
+		}
+		&-ttl{
+			display: block;
+			@include font-size(24);
+			font-weight: bold;
+			margin-bottom: 15px;
+			@include mq(){
+				@include font-size(16);
+				margin-bottom: 10px;
+			}
+		}
+		&-list{
+			@include flex(0,0,wrap);
+			li{
+				width: 280px;
+				@include flex(0,center,wrap);
+				@include mq(sm){
+					width: 100%;
+					margin-bottom: 10px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+				img{
+					display: block;
+					width: 20px;
+					margin: 0 7px 0 0;
+				}
+			}
+		}
+	}
+	&__item{
+		width: 120px;
+		@include flex(end,center,wrap);
+		@include mq(){
+			width: auto;
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+		}
+		a{
+			display: block;
+			margin-right: 15px;
+			@include mq(){
+				margin-right: 0;
+			}
+			img{
+				width: 40px;
+			}
+		}
+	}
+}
+
+.detail-category{
+	@include flex(0,0,wrap);
+	font-weight: bold;
+	padding: 0 20px;
+	li{
+		width: 33.333%;
+		padding-right: 15px;
+		margin-bottom: 20px;
+		@include mq(){
+			width: 100%;
+			border-bottom: 1px solid #E2E8F0;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+		}
+	}
+	&__ttl{
+		display: block;
+		color: #64748B;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+}
+
+.detail-note{
+	a{
+		color: #0F1A2A;
+		word-break: break-all;
+	}
+	ul{
+		li{
+			position: relative;
+			padding: 0 0 0 25px;
+			&:before{
+				content: "";
+				width: 3px;
+				height: 3px;
+				border-radius: 2px;
+				background: #0F1A2A;
+				position: absolute;
+				top: 12px;
+				left: 11px;
+			}
+		}
+	}
+}
+.detail-tag{
+	@include flex(0,0,wrap);
+
+	li{
+		margin: 0 15px 15px 0;
+		a,span{
+			display: block;
+			color: #0F1A2A;
+			border: 1px solid #D2DFFF;
+			@include font-size(14);
+			line-height: 1;
+			padding: 10px 20px;
+			border-radius: 40px;
+		}
+	}
+}
+
+.detail-maps{
+	@include flex(between,start,wrap);
+	&__ct{
+		width: calc(50% - 10px);
+		@include mq(){
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&-box{
+			border: 1px solid #E2E8F0;
+			border-radius: 16px;
+			padding: 15px;
+			cursor: pointer;
+			@include smooth-transition;
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&:hover{
+				border: 1px solid $blue;
+			}
+		}
+		&-item{
+			&.active{
+				.detail-maps__ct-box{
+					border: 1px solid $blue;
+				}
+				@include mq(){
+					.detail-maps__ct-iframe{
+						display: block;
+					}
+					.detail-maps__ct-ttl{
+						color: $blue;
+					}
+				}
+			}
+		}
+		&-iframe{
+			display: none;
+			border-radius: 16px;
+			overflow: hidden;
+		}
+		&-ttl{
+			display: block;
+			color: $blue;
+			@include font-size(20);
+			font-weight: bold;
+			margin-bottom: 15px;
+			@include mq(){
+				color: #0F1A2A;
+				@include font-size(16);
+			}
+		}
+		p{
+			position: relative;
+			padding: 0 0 0 30px;
+			&:before{
+				content: "";
+				width: 24px;
+				height: 24px;
+				background: url("../img/map.png")no-repeat;
+				background-size: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	&__show{
+		width: calc(50% - 10px);
+		border-radius: 16px;
+		overflow: hidden;
+		@include mq(){
+			width: 100%;
+		}
+		&-item{
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+
+	}
+	iframe{
+		width: 100% !important;
+		height: 410px !important;
+		@include mq(){
+			height: 220px !important;
+		}
+	}
+}
+
+.detail-img{
+	margin: 0 0 20px -10px;
+	@include mq(){
+		margin: 0 -15px 0 -10px;
+	}
+	.slick-list{
+		padding: 0 15% 0 0 !important;
+		@include mq(){
+			padding: 0 22% 0 0 !important;
+		}
+	}
+	&__item{
+		padding: 0 10px;
+		@include mq(){
+			padding: 0 5px;
+		}
+		img{
+			width: 100%;
+			border-radius: 16px;
+		}
+	}
+}
+
+.banner-list{
+	@include flex(0,0,wrap);
+	padding: 0 20px;
+	@include mq(){
+		padding: 0;
+		margin: 0 -5px;
+	}
+	&__item{
+		width: 25%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+		@include mq(){
+			width: 50%;
+			padding: 0 5px;
+			margin-bottom: 10px;
+		}
+	}
+	&__box{
+		display: block;
+		background: white;
+		border: 1px solid #E2E8F0;
+		border-radius: 8px;
+		padding: 20px;
+		@include mq(){
+			padding: 10px;
+		}
+	}
+}

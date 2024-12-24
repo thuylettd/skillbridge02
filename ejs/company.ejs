@@ -1,0 +1,1010 @@
+<main id="page-<%= pageData.template %>">
+	<section class="sec-pickup">
+		<div class="inner">
+			<div class="heading-box">
+				<div class="heading-box--left">
+					<div class="heading-box__input">
+						<input type="text" class="form-control" placeholder="企業名で検索">
+						<button type="button" class="heading-box__input-sub">
+							<img src="<%= RELATIVE_PATH %>img/search.png" alt="search">
+						</button>
+					</div>
+					<a href="">検索条件をリセット</a>
+				</div>
+				<div class="heading-box--right">
+					<div class="heading-box__note">
+						<a href="" class="c-btn__02 js-show-modal" data-modal="fillter">
+							<img src="<%= RELATIVE_PATH %>img/search-status.png" alt="search-status">
+							<span>詳細検索</span>
+						</a>
+						<a href="" class="c-btn__02 tooltip-hv" >
+							<img src="<%= RELATIVE_PATH %>img/magic-wand-01.png" alt="AI Search">
+							<span>AI Search</span>
+							<div class="tooltip-box">
+								<span class="tooltip-box__ttl">AI Search</span>
+								機能がまもなく使えるようにり﻿ます。
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="box-selected box-selected--styles02 company-curent">
+				<span class="company-curent__ttl">現在の検索条件:</span>
+				<ul class="box-selected__result"></ul>
+			</div>
+
+			<ul class="pickup-list mbpc-40 mbsp-30">
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Creative株式会社</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-01.png" alt="Creative株式会社">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam, Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">SmartOSC</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-02.png" alt="SmartOSC">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Trusting Social</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-03.png" alt="Trusting Social">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">TymeX</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-04.png" alt="TymeX">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Employment Hero</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-05.png" alt="Employment Hero">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam, Japan, England, England</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Hiteco Vietnam Co., Ltd</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-06.png" alt="Hiteco Vietnam Co., Ltd">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Absolute Software (Vietnam) Ltd</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-07.png" alt="Absolute Software (Vietnam) Ltd">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">VNG Corporation</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-08.png" alt="VNG Corporation">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Creative株式会社</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-01.png" alt="Creative株式会社">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam, Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">SmartOSC</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-02.png" alt="SmartOSC">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Trusting Social</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-03.png" alt="Trusting Social">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">TymeX</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-04.png" alt="TymeX">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Employment Hero</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-05.png" alt="Employment Hero">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam, Japan, England, England</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Hiteco Vietnam Co., Ltd</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-06.png" alt="Hiteco Vietnam Co., Ltd">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Absolute Software (Vietnam) Ltd</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-07.png" alt="Absolute Software (Vietnam) Ltd">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">VNG Corporation</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-08.png" alt="VNG Corporation">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Creative株式会社</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-01.png" alt="Creative株式会社">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam, Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">SmartOSC</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-02.png" alt="SmartOSC">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Vietnam</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/pin-03--blue.png" alt="img">
+						</div>
+					</a>
+				</li>
+				<li class="pickup-list__item">
+					<a href="" class="pickup-list__box">
+						<span class="pickup-list__ttl">Trusting Social</span>
+						<div class="pickup-list__img">
+							<img src="<%= RELATIVE_PATH %>img/logo-other-03.png" alt="Trusting Social">
+						</div>
+						<div class="pickup-list__ct">
+							<dl>
+								<dt>メンバー数</dt>
+								<dd>100名</dd>
+							</dl>
+							<dl>
+								<dt>実績件数</dt>
+								<dd>50件</dd>
+							</dl>
+						</div>
+						<div class="pickup-list__language">Japan</div>
+						<div class="pickup-list__box--pin">
+							<img src="<%= RELATIVE_PATH %>img/icon-pin.png" alt="img">
+						</div>
+					</a>
+				</li>
+
+			</ul>
+			<div class="show-box">
+				<div class="show-box--left">
+					全1,088件
+				</div>
+				<div class="show-box--right">
+					<ul class="pagination">
+						<li class="page-item"><a class="page-link arrow-link prev-link disabled" href="#">Previous</a></li>
+						<li class="page-item"><a class="page-link active" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><span>...</span></li>
+						<li class="page-item"><a class="page-link" href="#">39</a></li>
+						<li class="page-item"><a class="page-link" href="#">40</a></li>
+						<li class="page-item"><a class="page-link arrow-link next-link" href="#">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<div class="c-modal c-modal--engineer " id="fillter">
+		<div class="c-modal__wp">
+			<form action="" method="post" class="c-modal__fillter">
+				<h3 class="c-modal__fillter-ttl">詳細検索</h3>
+				<span class="c-modal__fillter-close js-cancel"><img src="./img/x-close.png" alt="Close" width="24"></span>
+				<div class="c-modal__fillter-flex">
+					<div class="col-type">
+						<h2 class="c-ttl__04">カテゴリー</h2>
+						<div class="col-type__wp">
+							<ul class="c-tabs js-tabs">
+								<li class="is-active"><a href="#" data-tab="tab01">会社種別<span class="qty qty-tab01"></span></a></li>
+								<li><a href="#" data-tab="tab02">企業業界<span class="qty qty-tab02"></span></a></li>
+								<li><a href="#" data-tab="tab03">企業規模</span><span class="qty qty-tab03"></span></a></li>
+								<li><a href="#" data-tab="tab04">スキル<span class="qty qty-tab04"></span></a></li>
+								<li><a href="#" data-tab="tab05">得意な分野 <span class="qty qty-tab05"></span></a></li>
+								<li><a href="#" data-tab="tab06">拠点<span class="qty qty-tab06"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-hint">
+						<h2 class="c-ttl__04">検索条件の項目</h2>
+						<div class="col-hint___wp">
+							<div class="tabs-content current" id="tab01">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="企画" data-tab="tab01">
+											<span class="txt-checkbox"><span>企画</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="要件定義 " data-tab="tab01">
+											<span class="txt-checkbox"><span>要件定義 </span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab01">
+											<span class="txt-checkbox"><span>デザイン</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="基本設計" data-tab="tab01">
+											<span class="txt-checkbox"><span>基本設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="詳細設計" data-tab="tab01">
+											<span class="txt-checkbox"><span>詳細設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="開発" data-tab="tab01">
+											<span class="txt-checkbox"><span>開発</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テスト" data-tab="tab01">
+											<span class="txt-checkbox"><span>テスト</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テスト" data-tab="tab01">
+											<span class="txt-checkbox"><span>ヘルプデスク</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="構築、設定" data-tab="tab01">
+											<span class="txt-checkbox"><span>構築、設定</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="監視" data-tab="tab01">
+											<span class="txt-checkbox"><span>監視</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テクニカルサポート" data-tab="tab01">
+											<span class="txt-checkbox"><span>テクニカルサポート</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="運用保守" data-tab="tab01">
+											<span class="txt-checkbox"><span>運用保守</span></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-content" id="tab02">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="詳細設計" data-tab="tab02">
+											<span class="txt-checkbox"><span>詳細設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="構築、設定" data-tab="tab02">
+											<span class="txt-checkbox"><span>構築、設定</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="ヘルプデスク" data-tab="tab02">
+											<span class="txt-checkbox"><span>ヘルプデスク</span></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-content" id="tab03">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="企画" data-tab="tab03">
+											<span class="txt-checkbox">企画</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab03">
+											<span class="txt-checkbox">要件定義</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab03">
+											<span class="txt-checkbox">デザイン</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-content" id="tab04">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab04">
+											<span class="txt-checkbox">要件定義</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab04">
+											<span class="txt-checkbox">デザイン</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-content" id="tab05">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="企画" data-tab="tab05">
+											<span class="txt-checkbox"><span>企画</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="要件定義 " data-tab="tab05">
+											<span class="txt-checkbox"><span>要件定義 </span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab05">
+											<span class="txt-checkbox"><span>デザイン</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="基本設計" data-tab="tab05">
+											<span class="txt-checkbox"><span>基本設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="詳細設計" data-tab="tab05">
+											<span class="txt-checkbox"><span>詳細設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="開発" data-tab="tab05">
+											<span class="txt-checkbox"><span>開発</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テスト" data-tab="tab05">
+											<span class="txt-checkbox"><span>テスト</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テスト" data-tab="tab05">
+											<span class="txt-checkbox"><span>ヘルプデスク</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="構築、設定" data-tab="tab05">
+											<span class="txt-checkbox"><span>構築、設定</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="監視" data-tab="tab05">
+											<span class="txt-checkbox"><span>監視</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="テクニカルサポート" data-tab="tab05">
+											<span class="txt-checkbox"><span>テクニカルサポート</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="運用保守" data-tab="tab05">
+											<span class="txt-checkbox"><span>運用保守</span></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-content" id="tab06">
+								<ul class="list-skills">
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="詳細設計" data-tab="tab06">
+											<span class="txt-checkbox"><span>詳細設計</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="構築、設定" data-tab="tab06">
+											<span class="txt-checkbox"><span>構築、設定</span></span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="form-checbox" value="ヘルプデスク" data-tab="tab06">
+											<span class="txt-checkbox"><span>ヘルプデスク</span></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-selected">
+					<div class="box-selected__heading">
+						<h3 class="c-ttl__04 c-fc--grey">選択済み<span class="qty"></span></h3>
+						<button class="txt-delete-all">全て削除</button>
+					</div>
+					<ul class="box-selected__result"></ul>
+				</div>
+				<div class="c-modal__control">
+					<button class="c-modal__submit c-modal__submit--gray js-cancel c-btn__02 c-btn__02--gray c-ft--serif js-cancel">キャンセル</button>
+					<a href=""  class="c-btn__02 tooltip-hv">
+						<img src="<%= RELATIVE_PATH %>img/magic-wand-01.png" alt="AI Search">
+						<span>AI Search</span>
+						<div class="tooltip-box">
+							<span class="tooltip-box__ttl">AI Search</span>
+							機能がまもなく使えるようにり﻿ます。
+						</div>
+					</a>
+					<a href="#" class="c-btn__02 c-modal__submit js-submit-skills">検索</a>
+				</div>
+			</form>
+
+			<div class="c-modal__filltersp">
+				<div class="c-modal__filltersp-heading">
+					<button class="c-modal__filltersp-cancel js-cancel"><img src="./img/arrow-left.png" alt="Close" width="24"></button>
+					<h3 class="c-modal__filltersp-ttl">詳細検索</h3>
+
+				</div>
+				<div class="scroll">
+
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab01">会社種別 <span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab01">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義 " data-tab="tab01">
+										<span class="txt-checkbox"><span>要件定義 </span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab01">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="基本設計" data-tab="tab01">
+										<span class="txt-checkbox"><span>基本設計</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="詳細設計" data-tab="tab01">
+										<span class="txt-checkbox"><span>詳細設計</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="開発" data-tab="tab01">
+										<span class="txt-checkbox"><span>開発</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="テスト" data-tab="tab01">
+										<span class="txt-checkbox"><span>テスト</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="ヘルプデスク" data-tab="tab01">
+										<span class="txt-checkbox"><span>ヘルプデスク</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="構築、設定" data-tab="tab01">
+										<span class="txt-checkbox"><span>構築、設定</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="監視" data-tab="tab01">
+										<span class="txt-checkbox"><span>監視</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="テクニカルサポート" data-tab="tab01">
+										<span class="txt-checkbox"><span>テクニカルサポート</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="運用保守" data-tab="tab01">
+										<span class="txt-checkbox"><span>運用保守</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab02">企業業界<span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab02">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab02">
+										<span class="txt-checkbox"><span>要件定義</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab02">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab03">企業規模 <span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab03">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab03">
+										<span class="txt-checkbox"><span>要件定義</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab03">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab04">スキル <span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab04">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab04">
+										<span class="txt-checkbox"><span>要件定義</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab04">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab05">得意な分野<span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab05">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab05">
+										<span class="txt-checkbox"><span>要件定義</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab05">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="fillter-acc">
+						<dt class="fillter-acc__label" data-tab="tab06">拠点 <span class="qty"></span></dt>
+						<dd class="fillter-acc__content tabs-content">
+							<ul class="list-skills">
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="企画" data-tab="tab06">
+										<span class="txt-checkbox"><span>企画</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="要件定義" data-tab="tab06">
+										<span class="txt-checkbox"><span>要件定義</span></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="form-checbox" value="デザイン" data-tab="tab06">
+										<span class="txt-checkbox"><span>デザイン</span></span>
+									</label>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="c-modal__filltersp-dl mb-0">
+						<dd class="c-modal__filltersp-dd">
+							<div class="box-selected">
+								<div class="box-selected__heading box-selected__heading--cusotm">
+									<button class="txt-delete-all">全て削除</button>
+									<h3 class="c-ttl__04 c-ttl__04--custom">選択済み<span class="qty"></span></h3>
+									<div class="custom--box">
+										<ul class="box-selected__result"></ul>
+									</div>
+								</div>
+
+							</div>
+							<div class="c-modal__control">
+								<div class="c-modal__control-item"><button class="c-modal__submit c-modal__submit--gray js-cancel c-btn__02 c-btn__02--gray c-ft--serif js-cancel">キャンセル</button></div>
+								<div class="c-modal__control-item"><a href="#" class="c-btn__02 c-modal__submit js-submit-skills">検索</a></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--clear ">
+		<span class="popup-close js-close-popup"></span>
+		<div class="popup-show">
+			<span class="popup-show__close js-close-popup"></span>
+			<div class="popup-show__heading">
+				<span class="popup-show__heading-ttl">削除の確認</span>
+			</div>
+			<div class="popup-show--clear">
+				すべて選択して削除をしますか。
+			</div>
+			<div class="popup-show--clear-sub">
+				<span class="c-btn__02 c-btn__02--gray js-close-popup">いいえ</span>
+				<span class="c-btn__02 c-btn__02--blue clear-option">はい</span>
+			</div>
+		</div>
+	</div>
+</main>

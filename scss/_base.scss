@@ -1,0 +1,52 @@
+@use "vars" as *;
+
+
+body {
+	color: #0F1A2A;
+	font-family: $font-jp;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4;
+	overflow-x: hidden;
+	background: #f6f8fc;
+}
+
+a{
+	text-decoration: none;
+	@include smooth-transition;
+	&:hover{
+		opacity: 0.7;
+	}
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		display: inline-block;
+	}
+	&[href^="tel"] {
+		@include mq(md-min){
+			pointer-events: none;
+		}
+	}
+	
+	@include mq(){
+		-webkit-tap-highlight-color: transparent;
+	}
+}
+
+.clearfix {
+	*zoom: 1;
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+
+
+
+
+
+
