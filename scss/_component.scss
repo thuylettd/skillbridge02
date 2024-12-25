@@ -211,9 +211,15 @@ Component
 				font-family: $font-Roboto;
 				margin-bottom: 24px;
 				line-height: 1.2;
+				@include mq(tb){
+					@include font-size(35);
+				}
+				@include mq{
+					@include font-size(24);
+				}
 				span{
 					display: block;
-					font-size: 50%;
+					@include font-size(24);
 					font-weight: 400;
 					margin-bottom: 24px;
 				}
@@ -222,12 +228,21 @@ Component
 				@include font-size(48);
 				line-height: 1.45;
 				font-weight: 700;
+				@include mq(tb){
+					@include font-size(35);
+				}
+				@include mq{
+					@include font-size(24);
+				}
 			}
 		}
 	}
 	&__07{
 		margin-bottom: 76px;
 		text-align: center;
+		@include mq{
+			margin-bottom: 80px;
+		}
 		& > *{
 			display: block;
 		}
@@ -237,6 +252,13 @@ Component
 				font-weight: 700;
 				font-family: $font-Roboto;
 				margin-bottom: 30px;
+				@include mq(xl){
+					margin-bottom: 18px;
+				}
+				@include mq{
+					@include font-size(18);
+					margin-bottom: 30px;
+				}
 			}
 			&--jp{
 				@include font-size(32);
@@ -244,6 +266,13 @@ Component
 				font-weight: 700;
 				display: inline-block;
 				text-align: left;
+				@include mq(tb){
+					@include font-size(28);
+				}
+				@include mq{
+					@include font-size(24);
+					line-height: 1.5;
+				}
 			}
 		}
 	}
@@ -252,12 +281,19 @@ Component
 		font-weight: 700;
 		line-height: 1.5;
 		margin-bottom: 15px;
+		@include mq{
+			@include font-size(18);
+		}
 		.txt-sm{
 			margin-bottom: 15px;
 			display: block;
+			@include mq{
+				margin-bottom: 18px;
+			}
 		}
 		.txt-lg{
 			display: block;
+			@include font-size(24);
 		}
 		span{
 			font-size: 75%;
@@ -500,10 +536,20 @@ Component
 		padding-left: 30px;
 		background: rgb(65, 105, 225);
 		background: linear-gradient(140deg, #3755F3 0%, #137FD9 100%);
+		@include mq{
+			max-width: 335px;
+			padding: 0;
+			justify-content: center;
+			gap: 0 15px;
+			@include font-size(16);
+		}
 		@include p-after(24px, 24px){
 			background: url(../img/arrow-right.png) no-repeat center/100%;
 			top: calc(50% - 12px);
 			right: 30px;
+			@include mq{
+				position: static;
+			}
 		}
 		&--02{
 			justify-content: center;

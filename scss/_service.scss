@@ -11,18 +11,41 @@
 	background: linear-gradient(140deg, #3755F3 0%, #137FD9 100%);
 	color: #fff;
 	position: relative;
-	@include p-before(52px, 203px){
+	@include mq(tb){
+		padding: 84px 50px;
+	}
+	@include mq{
+		padding: 188px 24px 192px;
+	}
+	@include p-before(2.708vw, 10.573vw){
 		background: url(../img/service/before-mv.png) no-repeat right bottom/100%;
 		top: 17px;
 		left: 0;
+		@include mq{
+			width: 91px;
+			height: 111px;
+			background: url(../img/service/before-mv-sp.png) no-repeat right bottom/100%;
+			top: 12px;
+		}
 	}
-	@include p-after(780px, 651px){
+	@include p-after(40.625vw, 33.906vw){
 		background: url(../img/service/after-mv.png) no-repeat right bottom/100%;
 		bottom: 0;
 		right: 0;
+		@include mq{
+			width: 281px;
+			height: 287px;
+			background: url(../img/service/after-mv-sp.png) no-repeat right bottom/100%;
+		}
 	}
 	&__ttl{
 		margin-bottom: 56px;
+		@include mq(tb){
+			margin-bottom: 40px;
+		}
+		@include mq{
+			margin-bottom: 30px;
+		}
 		& > *{
 			display: block;
 		}
@@ -33,17 +56,34 @@
 				font-weight: 700;
 				line-height: 1;
 				margin-bottom: 20px;
+				@include mq(tb){
+					@include font-size(40);
+				}
+				@include mq{
+					@include font-size(24);
+					margin-bottom: 17px;
+				}
 				span{
 					@include font-size(16);
 					display: block;
 					font-weight: 400;
 					margin-bottom: 22px;
+					@include mq{
+						margin-bottom: 18px;
+					}
 				}
 			}
 			&--jp{
 				@include font-size(48);
 				font-weight: 700;
 				line-height: 1.65;
+				@include mq(tb){
+					@include font-size(35);
+				}
+				@include mq{
+					@include font-size(24);
+					line-height: 1.5;
+				}
 			}
 		}
 	}
@@ -51,6 +91,11 @@
 
 .service-intro{
 	padding-top: 84px;
+	.inner{
+		@include mq{
+			padding: 0 24px;
+		}
+	}
 	&__ttl{
 		margin-bottom: 34px;
 		& > *{
@@ -62,21 +107,42 @@
 		.txt-lg{
 			@include font-size(48);
 			font-weight: 700;
+			@include mq(tb){
+				@include font-size(35);
+			}
+			@include mq{
+				@include font-size(24);
+				line-height: 1.45;
+			}
 		}
 	}
 	&__desc{
 		max-width: 680px;
 		margin-bottom: 80px;
-	}
-	&__img{
-
+		@include mq(tb){
+			margin-bottom: 40px;
+		}
+		@include mq{
+			margin-bottom: 17px;
+		}
 	}
 }
 
 .service-second{
 	padding-top: 80px;
+	@include mq{
+		padding-top: 83px;
+	}
+	&__ttl{
+		@include mq{
+			padding: 0 6px;
+		}
+	}
 	&__block{
 		margin-bottom: 77px;
+		@include mq{
+			margin-bottom: 80px;
+		}
 		&:last-of-type{
 			margin-bottom: 0;
 		}
@@ -88,11 +154,28 @@
 		padding: 0 24px;
 		width: 93%;
 		margin: 0 auto;
+		@include mq(tb){
+			width: 100%;
+			padding: 0;
+		}
+		@include mq{
+			grid-template-columns: 1fr;
+			gap: 80px 15px;
+			max-width: 450px;
+			margin: 0 auto;
+			padding: 0 8px;
+		}
 		&-item{
 			background: #ECF0FC;
 			border-radius: 10px;
 			position: relative;
 			padding: 0 24px 24px;
+			@include mq(tb){
+				padding: 0 15px 24px;
+			}
+			@include mq{
+				padding: 0 24px 24px;
+			}
 			.c-txt__02{
 				color: #474747;
 			}
@@ -104,8 +187,14 @@
 			color: #4169E1;
 			transform: translateY(-50%);
 			position: relative;
+			@include mq{
+				margin-bottom: -6px;
+			}
 			span{
 				margin-left: 10px;
+				@include mq{
+					margin-left: 5px;
+				}
 			}
 		}
 		&-img{
@@ -125,9 +214,30 @@
 		padding: 5px 24px;
 		width: 93%;
 		margin: 0 auto;
+		@include mq(tb){
+			width: 100%;
+			padding: 0;
+		}
+		@include mq{
+			grid-template-columns: 1fr;
+			padding: 0 8px;
+			max-width: 450px;
+			margin: 0 auto;
+			gap: 80px 15px;
+		}
+		&-ttl{
+			@include mq(xl){
+				@include mq(md-min){
+					@include font-size(22);
+					br{
+						display: none;
+					}
+				}
+			}
+		}
 		&-item{
 			.c-txt__02{
-				padding-bottom: 60px;
+				padding-bottom: 72px;
 				position: relative;
 				color: #474747;
 				@include p-after(0, 0){
@@ -135,7 +245,7 @@
 					border-color: #4169E1 transparent transparent transparent;
 					border-style: solid;
 					display: inline-block;
-					bottom: 6px;
+					bottom: 16px;
 					left: calc(50% - 34px);
 				}
 				&:last-of-type{
@@ -148,6 +258,14 @@
 			.c-ttl__08{
 				.txt-lg{
 					color: #4169E1;
+					@include mq(xl){
+						@include mq(md-min){
+							@include font-size(22);
+							br{
+								display: none;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -156,6 +274,11 @@
 	&__bnr{
 		max-width: 93%;
 		margin: 0 auto;
+		@include mq{
+			max-width: 99%;
+			position: relative;
+			right: 9px;
+		}
 	}
 }
 
@@ -163,50 +286,119 @@
 	padding-top: 147px;
 	padding-bottom: 126px;
 	background: #F7F7F7;
+	@include mq(xl){
+		padding: 90px 0 80px;
+	}
+	@include mq{
+		padding-top: 116px;
+		padding-bottom: 50px;
+	}
 	@include p-before(100%, 260px){
 		background: #fff;
 		top: 0;
 		left: 0;
+		@include mq{
+			height: 200px;
+		}
 	}
 	.inner{
 		position: relative;
 		z-index: 2;
+		@include mq{
+			padding: 0 23px;
+		}
 	}
 	&__intro{
 		max-width: 686px;
 		margin-bottom: 83px;
+		@include mq(tb){
+			margin-bottom: 50px;
+		}
+		@include mq{
+			margin-bottom: 30px;
+		}
 	}
 	&__list{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 127px 34px;
+		@include mq(xl){
+			grid-template-columns: 1fr;
+			gap: 6.615vw 34px;
+			width: 80%;
+			margin: 0 auto;
+		}
+		@include mq{
+			grid-template-columns: 1fr;
+			gap: 43px 0;
+		}
 		&-item{
-			@include flex(0,center);
+			@include flex(0,center,wrap);
 		}
 		&-img{
 			width: 160px;
 			position: relative;
 			top: -13px;
+			@include mq(sm){
+				top: 0;
+				margin: 0 auto 35px;
+			}
 		}
 		&-ct{
 			width: calc(100% - 160px);
 			padding-left: 34px;
+			@include mq(sm){
+				width: 100%;
+				padding-left: 0;
+			}
 		}
 		&-ttl{
 			margin-bottom: 16px;
+			@include mq{
+				@include font-size(24);
+			}
 		}
 	}
 }
 
 .service-data{
 	padding: 80px 0;
+	position: relative;
+	@include mq(xl){
+		padding-bottom: 0;
+	}
+	@include mq{
+		padding: 60px 0 0;
+		@include p-before(100%, 140px){
+			background: #F7F7F7;
+			top: 0;
+			left: 0;
+		}
+		.inner{
+			padding: 0 24px;
+			position: relative;
+			z-index: 2;
+		}
+	}
 	.c-ttl__06{
 		margin-bottom: 17px;
+		@include mq{
+			.c-ft--en{
+				margin-bottom: 18px;
+				span{
+					@include font-size(18);
+					margin-bottom: 14px;
+				}
+			}
+		}
 	}
 	&__block{
 		margin-bottom: 80px;
 		&:nth-last-child(2){
 			margin-bottom: 126px;
+			@include mq{
+				margin-bottom: 80px;
+			}
 		}
 		&:last-of-type{
 			margin-bottom: 0;
@@ -215,6 +407,12 @@
 	&__intro{
 		margin-bottom: 80px;
 		color: #474747;
+		@include mq(xl){
+			margin-bottom: 50px;
+		}
+		@include mq{
+			margin-bottom: 30px;
+		}
 	}
 	&__ttlsub{
 		padding: 7px 15px;
@@ -230,10 +428,17 @@
 			@include font-size(32);
 			font-weight: 700;
 			margin-bottom: 10px;
+			@include mq{
+				@include font-size(24);
+				line-height: 1.45;
+			}
 			span{
 				display: block;
 				@include font-size(18);
 				margin-bottom: 34px;
+				@include mq{
+					@include font-size(16);
+				}
 			}
 			&::before{
 				display: none;
@@ -243,6 +448,9 @@
 	&__desc{
 		margin-bottom: 80px;
 		color: #474747;
+		@include mq{
+			letter-spacing: 0.01em;
+		}
 		p{
 			margin-bottom: 32px;
 			&:last-of-type{
@@ -272,9 +480,25 @@
 		&-ttl{
 			@include font-size(18);
 			margin-bottom: 7px;
+			font-weight: 700;
+			@include mq{
+				@include font-size(16);
+			}
 		}
 		.c-txt__02{
 			margin-bottom: 10px;
+			@include mq{
+				@include font-size(12);
+			}
+		}
+		&-img{
+			@include mq(xl){
+				max-width: 80%;
+				margin: 0 auto;
+			}
+			@include mq{
+				max-width: 500px;
+			}
 		}
 		&-note{
 			display: block;
@@ -286,7 +510,9 @@
 			max-width: 800px;
 			.service-data__chart{
 				&-ttl{
-					@include font-size(24);
+					@include mq(md-min){
+						@include font-size(24);
+					}
 				}
 			}
 		}
@@ -308,9 +534,20 @@
 	background: linear-gradient(140deg, #3755F3 0%, #137FD9 100%);
 	color: #fff;
 	@include flex(0,center,wrap);
-	padding: 64px 64px;
+	padding: 3.333vw;
+	box-shadow: 0 43px 43px rgba($color: #000000, $alpha: .16);
+	border-radius: 10px;
+	@include mq{
+		padding: 64px 24px;
+		border-radius: 10px;
+	}
 	&__ct{
-		width: calc(100% - 447px);
+		width: calc(100% - 41.69%);
+		padding-right: 30px;
+		@include mq{
+			width: 100%;
+			margin-bottom: 30px;
+		}
 		.c-btn__solid{
 			max-width: 250px;
 			margin: 0 auto;
@@ -318,13 +555,35 @@
 	}
 	&__ttl{
 		margin-bottom: 32px;
+		@include mq{
+			margin-bottom: 35px;
+		}
 		.txt-sm{
 			display: block;
-			margin-bottom: 32px
+			margin-bottom: 32px;
+			@include mq{
+				text-align: center;
+				margin-bottom: 36px;
+			}
+			img{
+				@include mq{
+					width: 175px;
+				}
+			}
 		}
 		.txt-lg{
 			@include font-size(32);
 			font-weight: 700;
+			@include mq(tb){
+				@include font-size(24);
+			}
+			@include mq{
+				text-align: center;
+				display: block;
+			}
+			@include mq(sm){
+				text-align: left;
+			}
 		}
 	}
 	&__desc{
@@ -341,14 +600,32 @@
 		}
 	}
 	&__img{
-		width: 447px;
+		width: 41.69%;
+		@include mq{
+			width: 100%;
+		}
 	}
 
 	&--styles02{
-		padding: 74px 64px;
+		padding: 3.854vw 3.333vw;
+		@include mq{
+			padding: 64px 24px;
+			width: 96%;
+			margin: 0 auto;
+			.c-txt__02{
+				@include font-size(14);
+				letter-spacing: 0.01em;
+			}
+			.c-btn__solid{
+				max-width: 280px;
+			}
+		}
 		.service-bnr{
 			&__ttl{
 				margin-bottom: 13px;
+				@include mq{
+					margin-bottom: 40px;
+				}
 				.c-ft{
 					&--en{
 						font-family: $font-Roboto;
@@ -365,17 +642,46 @@
 					}
 				}
 			}
+			&__ttlsub{
+				@include font-size(24);
+				font-weight: 700;
+				line-height: 1.5;
+				margin-bottom: 34px;
+			}
 			&__img{
 				box-shadow: 0 43px 43px rgba($color: #000000, $alpha: .16);
+				@include mq(tb){
+					width: 100%;
+					margin-bottom: 30px;
+				}
 			}
+			&__ct{
+				@include mq(tb){
+					width: 100%;
+					max-width: 600px;
+					margin: 0 auto;
+					padding-right: 0;
+				}
+				@include mq{
+					margin-bottom: 0;
+				}
+			}
+			
 			&__list{
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				text-align: center;
 				@include font-size(14);
-				margin-top: 33px;
 				max-width: 566px;
 				gap: 0 65px;
+				margin: 33px auto 0;
+				@include mq(xl){
+					gap: 0 50px;
+				}
+				@include mq{
+					grid-template-columns: 1fr;
+					gap: 80px 0;
+				}
 				p{
 					margin-bottom: 24px;
 				}
@@ -385,6 +691,18 @@
 						background: #fff;
 						top: 0;
 						right: -32px;
+						@include mq(xl){
+							right: -25px;
+						}
+						@include mq{
+							top: auto;
+							bottom: -40px;
+							left: 50%;
+							transform: translateX(-50%);
+							right: 0;
+							width: 70.33%;
+							height: 1px;
+						}
 					}
 					&:last-child{
 						&:after{
@@ -405,23 +723,51 @@
 
 .service-faq{
 	padding-top: 77px;
-	padding-bottom: 126px;
+	padding-bottom: 6.563vw;
+	@include mq{
+		padding-top: 62px;
+		padding-bottom: 30px;
+	}
+	.inner{
+		@include mq{
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
 	.c-ttl__07{
 		margin-bottom: 30px;
+		@include mq{
+			margin-bottom: 47px;
+		}
 	}
 	&__bnr{
 		margin-bottom: 80px;
 		border-radius: 10px;
+		overflow: hidden;
+		@include mq{
+			width: 96%;
+			margin: 0 auto 48px;
+		}
 	}
 	&__top{
 		@include flex(0,0,wrap);
 		padding: 0 24px;
 		margin-bottom: 128px;
+		@include mq{
+			padding: 0 8px;
+			margin-bottom: 50px;
+		}
 		&-left{
 			width: 363px;
+			@include mq{
+				width: 100%;
+				margin-bottom: 48px;
+			}
 		}
 		&-img{
 			margin-bottom: 20px;
+			border-radius: 10px;
+			overflow: hidden;
 		}
 		&-box{
 			color: #fff;
@@ -449,6 +795,10 @@
 		&-right{
 			width: calc(100% - 363px);
 			padding-left: 32px;
+			@include mq{
+				width: 100%;
+				padding-left: 0;
+			}
 			dl{
 				margin-bottom: 23px;
 				&:last-of-type{
@@ -465,7 +815,16 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 0 32px;
-		margin-bottom: 130px;
+		margin-bottom: 6.771vw;
+		@include mq(tb){
+			gap: 0 15px;
+		}
+		@include mq{
+			grid-template-columns: 1fr;
+			gap: 48px 0;
+			padding: 0 8px;
+			margin-bottom: 46px;
+		}
 		&-img{
 			border-radius: 10px;
 			overflow: hidden;
@@ -473,6 +832,14 @@
 		}
 		&-ttl{
 			margin-bottom: 23px;
+			@include mq(tb){
+				@include mq(md-min){
+					@include font-size(20);
+				}
+			}
+			@include mq{
+				margin-bottom: 20px;
+			}
 		}
 		.c-txt__02{
 			span{
@@ -485,8 +852,14 @@
 	&__complete{
 		padding: 0 24px;
 		margin-bottom: 80px;
+		@include mq{
+			padding: 0 8px;
+		}
 		&-ttl{
 			margin-bottom: 48px;
+			@include mq{
+				@include font-size(24);
+			}
 		}
 		&-intro{
 			margin-bottom: 48px;
@@ -496,6 +869,10 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 0 16px;
+			@include mq{
+				grid-template-columns: 1fr;
+				gap: 50px 0;
+			}
 			.c-txt__02{
 				color: #474747;
 			}
@@ -503,15 +880,34 @@
 		&-data{
 			padding: 0 3px;
 			margin-bottom: 23px;
+			@include mq{
+				width: 85%;
+				margin: 0 auto 50px;
+				padding: 0;
+			}
+			@include mq(sm){
+				width: 100%;
+			}
 		}
 		&-txt-lead{
 			@include font-size(18);
 			font-weight: 700;
 			margin-bottom: 24px;
+			@include mq{
+				margin-bottom: 46px;
+				&:nth-child(2){
+					@include font-size(14);
+					margin-bottom: 18px;
+				}
+			}
 		}
 		&-caption{
 			text-align: right;
 			margin-top: 11px;
+			@include mq(tb){
+				@include font-size(12);
+				margin-top: 9px;
+			}
 			span{
 				text-decoration: underline;
 			}
@@ -526,6 +922,9 @@
 		position: relative;
 		width: 96%;
 		margin: 0 auto;
+		@include mq{
+			padding: 48px 24px;
+		}
 		&-txt-deco{
 			font-family: "Playball", serif;
 			@include font-size(48);
@@ -534,6 +933,10 @@
 			left: 37px;
 			transform: translateY(-50%);
 			line-height: 1;
+			@include mq{
+				@include font-size(32);
+				left: 25px;
+			}
 		}
 		&-label{
 			padding: 7px 14px;
@@ -542,9 +945,19 @@
 			font-weight: 700;
 			margin-bottom: 20px;
 			display: inline-block;
+			@include mq{
+				@include font-size(16);
+				padding: 9px 16px;
+				margin-bottom: 24px;
+			}
 		}
 		&-ttl{
 			margin-bottom: 16px;
+			@include mq{
+				@include font-size(24);
+				padding-right: 5px;
+				margin-bottom: 24px;
+			}
 		}
 	}
 }
@@ -552,16 +965,39 @@
 
 .service-process{
 	padding: 0 0 73px;
+	.c-ttl__07{
+		@include mq{
+			margin-bottom: 88px;
+		}
+	}
 	&__bnr{
 		margin-bottom: 80px;
+		@include mq(tb){
+			margin-bottom: 53px;
+		}
+		@include mq{
+			margin-bottom: 33px;
+		}
 	}
 	&__dl{
 		padding-bottom: 112px;
 		position: relative;
+		@include mq{
+			padding: 0 8px 128px;
+		}
 		@include p-after(102px, 45px){
 			background: url(../img/service/ico-arr-down.png) no-repeat center/100%;
 			bottom: 35px;
-			left: calc(50% - 51px)
+			left: calc(50% - 51px);
+			@include mq(tb){
+				width: 76px;
+			}
+			@include mq{
+				width: 56px;
+				height: 20px;
+				bottom: 60px;
+				left: calc(50% - 28px);
+			}
 		}
 		&:nth-last-child(2){
 			padding-bottom: 80px;
@@ -577,11 +1013,25 @@
 		@include flex(0, center);
 		gap: 0 15px;
 		margin-bottom: 33px;
+		@include mq(tb){
+			@include font-size(28);
+		}
+		@include mq{
+			@include font-size(24);
+			margin-bottom: 40px;
+			span{
+				position: relative;
+				top: -8px;
+			}
+		}
 	}
 	&__list{
 		&-item{
 			@include flex(0,0);
 			margin-bottom: 34px;
+			@include mq{
+				margin-bottom: 48px;
+			}
 			&:last-of-type{
 				margin-bottom: 0;
 			}
@@ -590,13 +1040,23 @@
 			width: 320px;
 			border-radius: 10px;
 			overflow: hidden;
+			@include mq(sm){
+				width: 100%;
+				margin-bottom: 16px;
+			}
 		}
 		&-ct{
 			width: calc(100% - 320px);
 			padding-left: 32px;
+			@include mq(sm){
+				width: 100%;
+				padding-left: 0;
+			}
 		}
 		&-ttl{
-
+			@include mq{
+				@include font-size(24);
+			}
 		}
 	}
 }

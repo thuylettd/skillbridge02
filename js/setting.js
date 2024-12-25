@@ -412,3 +412,10 @@ $('.box-selected__heading--cusotm .c-ttl__04').on('click', function(){
     $(this).toggleClass("active");
     $(this).next(".custom--box").toggleClass("active");
 });
+
+
+
+jQuery(function ($) {
+    $('.mh').matchHeight();
+    $('.service-second__list02-item .c-ttl__08 .txt-lg').matchHeight();
+});
